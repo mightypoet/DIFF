@@ -1,0 +1,6 @@
+{
+  "name": "DIFF Landing Page",
+  "description": "Cinematic landing page for the Darjeeling International Film Festival.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
