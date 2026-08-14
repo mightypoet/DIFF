@@ -26,7 +26,7 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="relative bg-[#0A0A0B] min-h-screen text-[#EBE6E0] overflow-hidden font-sans">
+    <div className="relative bg-[#FFFFFF] min-h-screen text-[#0A0A0B] overflow-hidden font-sans">
       <div className="film-grain"></div>
       
       <Navbar />

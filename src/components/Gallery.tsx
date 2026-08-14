@@ -12,7 +12,7 @@ const GALLERY_IMAGES = [
 
 export const Gallery = () => {
   return (
-    <section className="py-24 px-6 bg-[#0A0A0B] border-t border-white/10">
+    <section className="py-24 px-6 bg-[#FFFFFF] border-t border-black/10">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
@@ -20,14 +20,14 @@ export const Gallery = () => {
               <div className="w-8 h-[1px] bg-[#D4AF37]"></div>
               <span className="uppercase tracking-[0.4em] text-[11px] text-[#D4AF37]">Gallery</span>
             </div>
-            <h2 className="font-serif italic font-light tracking-tight text-4xl md:text-5xl text-[#EBE6E0] mb-4">
+            <h2 className="font-serif italic font-light tracking-tight text-4xl md:text-5xl text-[#0A0A0B] mb-4">
               Festival Moments
             </h2>
-            <p className="text-[#EBE6E0] opacity-60 font-serif italic max-w-lg">
+            <p className="text-[#0A0A0B] opacity-60 font-serif italic max-w-lg">
               A glimpse into the screenings, masterclasses, cultural celebrations and creative energy of DIFF.
             </p>
           </div>
-          <button className="text-[#EBE6E0] hover:text-[#D4AF37] transition-colors text-[11px] font-bold tracking-[0.2em] uppercase whitespace-nowrap flex items-center gap-2">
+          <button className="text-[#0A0A0B] hover:text-[#D4AF37] transition-colors text-[11px] font-bold tracking-[0.2em] uppercase whitespace-nowrap flex items-center gap-2">
             View Full Gallery <span className="text-lg">&rarr;</span>
           </button>
         </div>
@@ -40,7 +40,7 @@ export const Gallery = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className={`relative overflow-hidden group bg-[#1A1A1C] border border-white/10 p-1 ${img.span}`}
+              className={`relative overflow-hidden group bg-[#F5F5F0] border border-black/10 p-1 ${img.span}`}
             >
               <div className="w-full h-full relative overflow-hidden">
                 <img 

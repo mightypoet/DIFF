@@ -10,11 +10,11 @@ const CULTURE_ITEMS = [
 
 export const Culture = () => {
   return (
-    <section className="py-24 px-6 bg-[#0A0A0B] overflow-hidden border-t border-white/10">
+    <section className="py-24 px-6 bg-[#FFFFFF] overflow-hidden border-t border-black/10">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 text-center flex flex-col items-center">
           <div className="mb-6">
-            <span className="text-[10px] uppercase tracking-[0.3em] font-mono opacity-50 border border-white/10 px-4 py-2">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-mono opacity-50 border border-black/10 px-4 py-2">
               Beyond the Screen
             </span>
           </div>
@@ -22,7 +22,7 @@ export const Culture = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-serif italic font-light tracking-tight text-4xl md:text-5xl lg:text-7xl text-[#EBE6E0]"
+            className="font-serif italic font-light tracking-tight text-4xl md:text-5xl lg:text-7xl text-[#0A0A0B]"
           >
             The Culture <br /> 
             <span className="not-italic font-sans font-black uppercase tracking-tighter opacity-90 block mt-2">BEHIND THE FRAME</span>
@@ -39,7 +39,7 @@ export const Culture = () => {
               transition={{ duration: 0.8 }}
               className={`relative group ${idx % 2 === 1 ? 'md:mt-32' : ''}`}
             >
-              <div className="aspect-[4/3] w-full overflow-hidden bg-[#1A1A1C] border border-white/10 p-2">
+              <div className="aspect-[4/3] w-full overflow-hidden bg-[#F5F5F0] border border-black/10 p-2">
                 <div className="w-full h-full relative overflow-hidden">
                   <img 
                     src={item.image} 
@@ -49,14 +49,14 @@ export const Culture = () => {
                 </div>
               </div>
               
-              <div className="absolute -bottom-8 -left-4 md:-left-8 bg-[#0A0A0B] p-6 md:p-8 border border-white/10 shadow-2xl max-w-[80%] z-10 group-hover:border-[#D4AF37]/50 transition-colors">
-                <div className="text-[10px] uppercase tracking-[0.2em] font-mono opacity-40 mb-2 border-b border-white/10 pb-2">
+              <div className="absolute -bottom-8 -left-4 md:-left-8 bg-[#FFFFFF] p-6 md:p-8 border border-black/10 shadow-2xl max-w-[80%] z-10 group-hover:border-[#D4AF37]/50 transition-colors">
+                <div className="text-[10px] uppercase tracking-[0.2em] font-mono opacity-40 mb-2 border-b border-black/10 pb-2">
                   0{idx + 1}
                 </div>
-                <h3 className="font-serif italic text-2xl md:text-3xl text-[#EBE6E0] mb-3">
+                <h3 className="font-serif italic text-2xl md:text-3xl text-[#0A0A0B] mb-3">
                   {item.title}
                 </h3>
-                <p className="text-[#EBE6E0] opacity-60 font-sans text-xs md:text-sm leading-relaxed">
+                <p className="text-[#0A0A0B] opacity-60 font-sans text-xs md:text-sm leading-relaxed">
                   {item.desc}
                 </p>
               </div>

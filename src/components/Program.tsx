@@ -23,7 +23,7 @@ const SCHEDULE = [
 
 export const Program = () => {
   return (
-    <section className="py-24 px-6 bg-[#0A0A0B] border-t border-white/10">
+    <section className="py-24 px-6 bg-[#FFFFFF] border-t border-black/10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
         <div className="lg:w-1/3">
           <motion.div
@@ -32,16 +32,16 @@ export const Program = () => {
             viewport={{ once: true }}
             className="sticky top-32"
           >
-            <h2 className="font-serif italic font-light tracking-tight text-4xl md:text-5xl text-[#EBE6E0] mb-2">
+            <h2 className="font-serif italic font-light tracking-tight text-4xl md:text-5xl text-[#0A0A0B] mb-2">
               The Festival
             </h2>
-            <h2 className="font-sans font-black uppercase tracking-tighter text-4xl md:text-5xl text-[#EBE6E0] opacity-90 mb-6">
+            <h2 className="font-sans font-black uppercase tracking-tighter text-4xl md:text-5xl text-[#0A0A0B] opacity-90 mb-6">
               PROGRAM
             </h2>
-            <p className="text-[#EBE6E0] opacity-60 font-serif italic mb-8 max-w-sm">
+            <p className="text-[#0A0A0B] opacity-60 font-serif italic mb-8 max-w-sm">
               Three days of cinema, culture, and creative exchange in the heart of the Himalayas.
             </p>
-            <button className="text-[10px] font-bold tracking-[0.2em] uppercase border border-white/20 hover:bg-white/10 transition-colors px-6 py-3 text-[#EBE6E0]">
+            <button className="text-[10px] font-bold tracking-[0.2em] uppercase border border-black/20 hover:bg-black/5 transition-colors px-6 py-3 text-[#0A0A0B]">
               Download Full Schedule
             </button>
           </motion.div>
@@ -55,24 +55,24 @@ export const Program = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="border-t border-white/10 pt-8"
+              className="border-t border-black/10 pt-8"
             >
               <div className="flex items-baseline gap-4 mb-8">
                 <h3 className="font-serif italic text-3xl text-[#D4AF37]">{day.day}</h3>
-                <span className="text-[#EBE6E0] opacity-40 text-[11px] uppercase tracking-[0.3em] font-mono">{day.date}</span>
+                <span className="text-[#0A0A0B] opacity-40 text-[11px] uppercase tracking-[0.3em] font-mono">{day.date}</span>
               </div>
 
               <div className="flex flex-col gap-6">
                 {day.events.map((event, eIdx) => (
                   <div key={eIdx} className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center group cursor-default">
-                    <div className="text-[#EBE6E0] opacity-50 text-[10px] uppercase tracking-[0.2em] font-mono md:col-span-1 group-hover:text-[#D4AF37] group-hover:opacity-100 transition-colors">
+                    <div className="text-[#0A0A0B] opacity-50 text-[10px] uppercase tracking-[0.2em] font-mono md:col-span-1 group-hover:text-[#D4AF37] group-hover:opacity-100 transition-colors">
                       {event.time}
                     </div>
                     <div className="md:col-span-2">
-                      <h4 className="text-lg text-[#EBE6E0] opacity-80 group-hover:opacity-100 font-serif group-hover:italic transition-all">{event.title}</h4>
+                      <h4 className="text-lg text-[#0A0A0B] opacity-80 group-hover:opacity-100 font-serif group-hover:italic transition-all">{event.title}</h4>
                     </div>
                     <div className="md:col-span-1 text-right">
-                      <span className="inline-block px-3 py-1 border border-white/10 text-[9px] text-[#EBE6E0] opacity-50 uppercase tracking-[0.2em] group-hover:border-white/30 transition-colors whitespace-nowrap">
+                      <span className="inline-block px-3 py-1 border border-black/10 text-[9px] text-[#0A0A0B] opacity-50 uppercase tracking-[0.2em] group-hover:border-black/30 transition-colors whitespace-nowrap">
                         {event.type}
                       </span>
                     </div>

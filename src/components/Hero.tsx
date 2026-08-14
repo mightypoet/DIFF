@@ -11,13 +11,13 @@ export const Hero = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="absolute inset-0"
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0B] via-[#0A0A0B]/60 to-transparent mix-blend-multiply" />
-          <div className="absolute inset-0 bg-[#0A0A0B]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-[#FFFFFF]/60 to-transparent mix-blend-normal" />
+          <div className="absolute inset-0 bg-[#FFFFFF]/40" />
         </motion.div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex">
-        <div className="hidden md:flex w-1/12 border-r border-white/10 items-center justify-center min-h-[50vh]">
+        <div className="hidden md:flex w-1/12 border-r border-black/10 items-center justify-center min-h-[50vh]">
           <div className="rotate-[-90deg] whitespace-nowrap uppercase tracking-[0.5em] text-[9px] opacity-40 font-mono">
             EST. 2026 — HIMALAYAS — WEST BENGAL
           </div>
@@ -48,10 +48,10 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
-            <button className="px-8 py-4 bg-[#EBE6E0] text-[#0A0A0B] text-[11px] font-bold uppercase tracking-[0.2em] flex items-center justify-center gap-3 hover:bg-white transition-colors">
+            <button className="px-8 py-4 bg-[#0A0A0B] text-[#FFFFFF] text-[11px] font-bold uppercase tracking-[0.2em] flex items-center justify-center gap-3 hover:bg-zinc-800 transition-colors">
               Explore the Festival <span className="text-lg">&rarr;</span>
             </button>
-            <button className="px-8 py-4 border border-white/20 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white/10 text-[#EBE6E0] transition-colors">
+            <button className="px-8 py-4 border border-black/20 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-black/5 text-[#0A0A0B] transition-colors">
               Film in Darjeeling
             </button>
           </div>
